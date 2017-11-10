@@ -1,0 +1,5 @@
+# IDE ignore
+/.idea/
+
+# Map files
+style.css.map

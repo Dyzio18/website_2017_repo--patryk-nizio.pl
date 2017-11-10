@@ -1,0 +1,35 @@
+/*
+Theme Name: patryk-nizio Theme
+Theme URI: https://github.com/Dyzio18/patryk-nizio.pl
+Author: Patryk Nizio
+Author URI: https://github.com/Dyzio18
+Description: Autorski szablon dla strony patryk-nizio.pl
+Version: 1.0
+License: PRIVATE USE | NO COMMERCIAL
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: white, minimalism, portfolio, web-developer, front-end
+Text Domain: patryk-nizio.pl
+*/
+
+
+/**
+
+ */
+
+@import "base/common";
+
+// 12-columns bootstrap grid
+@import "vendor/bootstrap_grid/bootstrap-grid";
+
+@import "base/flex";
+@import "base/typography";
+@import "base/helpers";
+@import "layout/navbar";
+@import "layout/header";
+@import "layout/footer";
+@import "components/button";
+
+
+.test{
+  border: 2px solid #002752;
+}
