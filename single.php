@@ -4,13 +4,9 @@
 <!-- Post loop -->
 <section class="container" style="margin-bottom: 120px;">
     <div class="row">
-        <div class="col-lg-6"></div>
-        <div class="col-lg-6 text-right">
-            <h3 id="News" class="title">Aktualności</h3>
-        </div>
         <?php while (have_posts()) : the_post(); ?>
             <article class="col-lg-12 col-md-12 col-sm-12">
-                <h3 class="post__title"><p class="display-4"><?php the_title(); ?></p></h3>
+                <h1 class="display-4"><?php the_title(); ?></h1>
                 <p>
                     <span class=""><?php the_time('j F, Y');?></span>
                     <span class="float-right"><?php the_tags(); ?></span>

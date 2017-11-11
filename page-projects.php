@@ -6,8 +6,9 @@
 
 <?php get_header();?>
 
-<div class="project container-fluid ">
-    <div class="row justify-content-lg-center">
+<div class="container-fluid ">
+    <h1>PROJEKTY</h1>
+    <div class="row">
         <!--/ Project ===================== -->
 
 

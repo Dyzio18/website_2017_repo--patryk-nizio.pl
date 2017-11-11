@@ -29,6 +29,9 @@ html {
 // Grid mixins
 //
 
+.d-flex {
+  display: flex;
+}
 @import "mixins/breakpoints";
 @import "mixins/grid-framework";
 @import "mixins/grid";

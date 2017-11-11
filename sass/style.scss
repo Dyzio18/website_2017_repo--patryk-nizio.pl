@@ -11,15 +11,17 @@ Tags: white, minimalism, portfolio, web-developer, front-end
 Text Domain: patryk-nizio.pl
 */
 
+@import "variables";
 
-/**
-
- */
 
 @import "base/common";
-
+// Reset styles
+@import "vendor/bootsrap_vendor/bootstrap-reboot";
 // 12-columns bootstrap grid
 @import "vendor/bootstrap_grid/bootstrap-grid";
+// Fonts
+@import "vendor/bootsrap_vendor/type";
+
 
 @import "base/flex";
 @import "base/typography";
@@ -27,9 +29,11 @@ Text Domain: patryk-nizio.pl
 @import "layout/navbar";
 @import "layout/header";
 @import "layout/footer";
+
+//index.php
+@import "layout/index/panel-intro";
+@import "layout/index/call-to-action";
+@import "layout/index/header";
+
 @import "components/button";
-
-
-.test{
-  border: 2px solid #002752;
-}
+@import "components/search-form";
