@@ -13,7 +13,7 @@
                 </p>
                 <?php the_content('Read More'); ?>
 
-                <a href="<?php echo get_home_url();?>" class="btn btn-outline-secondary margin__top--m">Wróć do strony głównej</a>
+                <a href="<?php echo get_home_url();?>" class="btn">Wróć do strony głównej</a>
 
             </article>
         <?php endwhile; ?>

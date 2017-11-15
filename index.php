@@ -53,9 +53,9 @@
     <div class="row">
         <article class="col-sm-12 col-md-6">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
+                <img src=" " style="width: 100%; height: 300px; background: #eee;">
                 <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                <?php the_post_thumbnail(); ?>
+
                 <?php the_excerpt(); ?>
             <?php endwhile; else: ?>
                 <?php _e( 'Sorry, no posts matched your criteria.', 'textdomain' ); ?>
