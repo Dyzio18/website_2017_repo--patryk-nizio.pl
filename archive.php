@@ -1,26 +1,28 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying archive pages
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package dyzio_theme
+ */
 
-<header style="height:100%;">
+get_header(); ?>
 
-
-</header>
-
-
-<div id="content" class="container">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
 		<?php
-		if ( have_posts() ) :
+		if ( have_posts() ) : ?>
 
-			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
+			<header class="page-header">
+				<?php
+					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_description( '<div class="archive-description">', '</div>' );
+				?>
+			</header><!-- .page-header -->
 
 			<?php
-			endif;
-
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
 
@@ -44,7 +46,6 @@
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-</div> <!-- .container -->
 <?php
-//get_sidebar();
+get_sidebar();
 get_footer();

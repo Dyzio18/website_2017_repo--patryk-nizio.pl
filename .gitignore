@@ -1,8 +1,0 @@
-# IDE ignore
-.idea/
-
-# Map files
-style.css.map
-
-# Ignore unused bootstrap mixin
-sass/vendor/bootstrap

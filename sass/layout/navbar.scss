@@ -1,0 +1,101 @@
+@import "../variable";
+
+.navbar {
+    width: 100%;
+    height: 145px;
+    position: fixed;
+    top: 0;
+    background: $background_top; 
+    transition: 0.6s
+
+}
+
+.navbar--shrink {
+    height: 60px;
+
+    .navbar__logo {
+        font-size: 20px;
+        letter-spacing: 2px;
+        transition: 0.6s
+    }
+
+    transition: 0.6s
+}
+
+.navbar__desktop{
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar__search {
+    width: 40%;
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+
+    input:focus {
+        outline:none;
+    }
+
+}
+
+.search__bar{
+    width: 250px;
+    height: 42px;
+    text-align: center;
+    border-radius: 25px;
+    background: $search_top;
+    background: -webkit-linear-gradient($search_top,$search_bottom); /* Safari 5.1 to 6.0 */
+    background: -moz-linear-gradient($search_top,$search_bottom); /* Firefox 3.6 to 15 */
+    background: -o-linear-gradient($search_top,$search_bottom); /* Opera 11.1 to 12.0 */
+    background: linear-gradient($search_top,$search_bottom); /* Standard syntax (must be last) */
+    
+    .search__input {
+        width: 80%;
+        border: none;
+        border-bottom: 1px solid #fff;
+        color: $text_c;
+        background: transparent;
+    }
+}
+
+.navbar__logo {
+    width: 20%;
+    font-size: 31px;
+    font-weight: bold;
+    white-space: pre-line;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+    transition: 0.6s;
+
+    a, a:hover{
+        text-decoration: none;
+        color: $text_c;
+    }
+}
+
+.navbar__menu {
+    width: 40%;
+    ul {
+        list-style: none;
+        display:inline;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        li {
+           float: left;
+        }
+
+        li a {
+            display: block;
+            color: $text_c;
+        }
+    }
+}

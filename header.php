@@ -1,30 +1,47 @@
-<!DOCTYPE html>
-<html lang="pl">
+<?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package dyzio_theme
+ */
+
+?>
+<!doctype html>
+<html <?php language_attributes(); ?>>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title><?php bloginfo('title'); ?></title>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700" rel="stylesheet">
-
-    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-
-    <?php wp_head(); ?>
-
+	<?php wp_head(); ?>
 </head>
-<body>
+
+<body <?php body_class(); ?>>
 
 
-<nav style="width: 100%; height: 60px; position:fixed; top: 0; background: #dedede; z-index: 100;">
-    <a href="<?php echo home_url(); ?>">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/base/logo_first_test.png" alt="Website Logo" style="max-height: 50px; display: inline"/>
-    </a>
-        <?php get_search_form(); ?>
-    <div class="d-flex flex-row-reverse" style="display: inline; float: right; padding-top: 10px;">
-        <button> Blog</button>
-        <button> Projekty</button>
-        <button> O mnie</button>
-    </div>
+<nav class="navbar">
+	<div class="navbar__desktop">
+		<div class="navbar__search">
+			<div class="search__bar">
+				<input class="search__input" placeholder="" type="search" name="search" id="">
+			</div>
+		</div>
+		
+			<div class="navbar__logo"><a class="link--clear" href="<?php echo get_home_url(); ?>">Patryk 
+				Nizio</a>
+			</div>
+		
+		<div class="navbar__menu">
+			<ul class="list--inline">
+				<li><a href="#">blog</a></li>
+				<li><a href="#">portfolio</a></li>
+				<li><a href="#">o mnie</a></li>
+			</ul>
+		</div>
+	</div>
 </nav>
-<br><br>
+

@@ -1,24 +1,35 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying all single posts
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ *
+ * @package dyzio_theme
+ */
 
+get_header(); ?>
 
-<!-- Post loop -->
-<section class="container" style="margin-bottom: 120px;">
-    <div class="row">
-        <?php while (have_posts()) : the_post(); ?>
-            <article class="col-lg-12 col-md-12 col-sm-12">
-                <h1 class="display-4"><?php the_title(); ?></h1>
-                <p>
-                    <span class=""><?php the_time('j F, Y');?></span>
-                    <span class="float-right"><?php the_tags(); ?></span>
-                </p>
-                <?php the_content('Read More'); ?>
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
 
-                <a href="<?php echo get_home_url();?>" class="btn btn-outline-secondary margin__top--m">Wróć do strony głównej</a>
+		<?php
+		while ( have_posts() ) : the_post();
 
-            </article>
-        <?php endwhile; ?>
-    </div>
-</section>
-<!--/ Post loop -->
+			get_template_part( 'template-parts/content', get_post_type() );
 
-<?php get_footer(); ?>
+			the_post_navigation();
+
+			// If comments are open or we have at least one comment, load up the comment template.
+			if ( comments_open() || get_comments_number() ) :
+				comments_template();
+			endif;
+
+		endwhile; // End of the loop.
+		?>
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+<?php
+get_sidebar();
+get_footer();

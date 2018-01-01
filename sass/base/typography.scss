@@ -1,3 +1,11 @@
-.title {
+@import "../variable";
 
+body {
+    font-size: 17px;
+    color: $text_c;
+}
+
+.link--clear, .link--clear:hover, .link--clear:visited { 
+    color: $text_c;
+    text-decoration: none;
 }
