@@ -5,6 +5,42 @@ body {
     color: $text_c;
 }
 
+.title {
+    font-size: 53px;
+    color: $title_c;
+    font-weight: bold;
+}
+
+.title--small {
+    font-size: 25px;
+    color: $title_c;
+    font-weight: bold;
+}
+
+.title--awarded {
+    font-size: 87px;
+    letter-spacing: 10px;
+    color: $text_awarded_c;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.text--small {
+    font-size: 13px;
+}
+
+.text {
+    font-size: 17px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.text--center {
+    text-align: center;
+}
+
 .link--clear, .link--clear:hover, .link--clear:visited { 
     color: $text_c;
     text-decoration: none;

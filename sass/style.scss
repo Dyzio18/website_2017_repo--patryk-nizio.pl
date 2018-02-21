@@ -1,5 +1,5 @@
 /**
-
+xc
 */
 
 @import "vendor/bootstrap-reboot";
@@ -10,4 +10,7 @@
 @import "layout/main";
 @import "layout/navbar";
 @import "layout/footer";
+@import "layout/about-me";
 
+@import "components/post";
+@import "helpers/padding-margin";

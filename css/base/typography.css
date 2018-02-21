@@ -2,6 +2,35 @@ body {
   font-size: 17px;
   color: #f5f5f5; }
 
+.title {
+  font-size: 53px;
+  color: #00e0a3;
+  font-weight: bold; }
+
+.title--small {
+  font-size: 25px;
+  color: #00e0a3;
+  font-weight: bold; }
+
+.title--awarded {
+  font-size: 87px;
+  letter-spacing: 10px;
+  color: #0c00dd;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.text--small {
+  font-size: 13px; }
+
+.text {
+  font-size: 17px; }
+
+.bold {
+  font-weight: bold; }
+
+.text--center {
+  text-align: center; }
+
 .link--clear, .link--clear:hover, .link--clear:visited {
   color: #f5f5f5;
   text-decoration: none; }

@@ -1,0 +1,99 @@
+.profil {
+    padding-top: 280px;
+    display: flex;
+    flex-direction: row;
+}
+
+.profil__img {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 280px;
+    width: 280px;
+    height: 280px;
+}
+
+.profil__desc {
+    margin-left: 75px;
+    p {
+        padding-left: 20px;
+    }
+}
+
+.profil__bar{
+    margin-top: 75px;
+    margin-bottom: 140px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 3px solid $text_c;
+
+    .profil__links{
+        padding: 30px 30px 0px 30px;
+        ul {
+            list-style: none;
+            display:inline;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+    
+            li {
+               float: left;
+            }
+    
+            li a {
+                color: $text_c;
+            }
+        }
+    }
+
+}
+
+.technology {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding-top: 50px;
+
+}
+.technology__desc {
+    width: 40%;
+
+}
+.technology__mesh {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    cursor: pointer;
+
+
+    .mesh__row{
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .mesh__block {
+        width: 100px;
+        min-height: 100px;
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px)  {
+    .profil {
+        flex-direction: column-reverse;
+    }
+    .profil__desc {
+        margin-left: 0px;
+        p {
+            padding-left: 10px;
+        }
+    }
+
+}

@@ -5,11 +5,6 @@
  * navigation support for dropdown menus.
  */
 ( function() {
-
-	console.log("Co tu paczasz?");
-
-
-
 	// ------------------------------------
 	var container, button, menu, links, i, len;
 

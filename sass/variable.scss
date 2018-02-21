@@ -1,5 +1,9 @@
 
-// Colors of bacground
+// category,
+$secondary: #E53935;
+$secondary__dark:#c62828;
+
+// Colors of background
 $background_top: #000039;
 $background_bottom: #1a024e;
 
@@ -9,5 +13,8 @@ $search_bottom:#010058;
 
 // Colors of text
 $text_c: #f5f5f5; // paragraph, content...
-$text_header_c: #00e0a3; // headers
-$text_awarded_c: #0e00dd; // main header, awarded text
+//$text_header_c: #00e0a3; // headers
+$title_c: #00e0a3;
+$text_awarded_c: #0c00dd; // main header, awarded text
+
+$black_lt: #333333;

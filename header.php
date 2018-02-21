@@ -38,8 +38,8 @@
 		<div class="navbar__menu">
 			<ul class="list--inline">
 				<li><a href="#">blog</a></li>
-				<li><a href="#">portfolio</a></li>
-				<li><a href="#">o mnie</a></li>
+				<li><a href="<?php echo get_home_url(); ?>/portfolio">portfolio</a></li>
+				<li><a href="<?php echo get_home_url(); ?>/o-mnie">o mnie</a></li>
 			</ul>
 		</div>
 	</div>
