@@ -1,0 +1,30 @@
+@import "../variable";
+
+.main {
+    margin-top: -80px;
+    padding: 20px;
+    background: $background_bottom;
+}
+
+.grid__mesh{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+@media (max-width: 992px) {
+    .main {
+        padding: 0px;
+        padding-top: 15px;
+        margin-top: -20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main {
+        padding: 0px;
+        padding-top: 0px;
+        margin-top: -10px;
+    }
+}

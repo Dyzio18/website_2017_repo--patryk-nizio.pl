@@ -7,31 +7,15 @@
     </header>
 
 
-    <section id="content" class="container">
-        <div class="row">
-            <div class="col-lg-5 col-md-12 col-sm-12">
-                <?php
-                $args = array (
-                    'showposts' => '1',
-                    'category_name' => 'wyroznione',
-                    'paged' => $paged
-                );
-                $the_query = new WP_Query( $args );
+    <section id="content" class="container main">
+        <div class="grid__mesh">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <h2 class="title h1 text--center p-t-45"> 
+                    Hello World!
+                </h2>
 
-                if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();?>
-                    <article class="post__primary">
-                        <a href="<?php the_permalink(); ?>" class="post__primary--crop">
-                            <img src="<?php the_post_thumbnail_url('medium');?>" alt="<?php the_title_attribute(); ?>" class="postPrimary__img" />
-                        </a>
-                        <h3 class="title"> <?php echo the_title() ; ?> </h3>
-                        <p class="text"> <?php echo the_excerpt(); ?><p>
-                    </article>
-                <?php endwhile;
-                endif; ?>
-            </div> <!-- .column 1 (with one post) -->
+            </div> <!-- Greetings -->
 
-            <div class="col-lg-7 col-md-12 col-sm-12 ">
-                <div class="post__list--aside">
                     <?php
                     if ( have_posts() ) :
                         if ( is_home() && ! is_front_page() ) : ?>
@@ -50,23 +34,36 @@
                         while($recent->have_posts()):$recent->the_post();
                             ?>
 
-                            <article class="post__thumbnail">
+                            <article class=" col-6-lg col-md-6 col-sm-12 post__thumbnail">
                                 <div class="thumbnail__box">
                                     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="thumbnail__img--crop">
                                         <?php if ( has_post_thumbnail() ) : ?>
                                             <img src="<?php the_post_thumbnail_url('medium');?>" alt="<?php the_title_attribute(); ?>" class="thumbnail__img" />
                                         <?php else: ?>
-                                            <img src="https://i.ytimg.com/vi/Bor5lkRyeGo/hqdefault.jpg" alt="<?php the_title_attribute(); ?>" class="thumbnail__img" />
+                                            <img src="http://maxpixel.freegreatpicture.com/static/photo/1x/Island-Flat-Design-Ocean-Ducks-Sea-Deserted-Island-3028648.png" alt="<?php the_title_attribute(); ?>" class="thumbnail__img" />
                                         <?php endif; ?>
+                                        <h3 class="thumbnail__title title h3"> <?php echo the_title() ; ?> </h3>
+                                        <span class="thumbnail__date"><?php echo get_the_date(); ?></span>
                                     </a>
-                                    <a class="thumbnail__category" href="#"> Kategoria </a>
+
+                                    <?php   
+                                    $categories = get_the_category();  $separator = ' '; $output = '';
+                                    if ( ! empty( $categories ) ) {
+                                        foreach( $categories as $category ) {
+                                            $output .= '<a class="thumbnail__category" href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ) . '">' . esc_html( $category->name ) . '</a>' . $separator;
+                                        }
+                                        echo trim( $output, $separator );
+                                    }
+                                    ?>
                                 </div>
-                                <!--/ Thumbnail -->
+
+
+                                <!--/ Thumbnail
                                 <div class="thumbnail__desc">
                                     <span class="thumbnail__date"><?php echo get_the_date(); ?></span>
                                     <a href="<?php the_permalink(); ?>" class="thumbnail__header"> <h3><?php echo the_title() ; ?> </h3></a>
                                     <div class="thumbnail__text"> <?php echo the_excerpt(); ?><div>
-                                </div>
+                                </div> -->
                             </article>
 
                             <?php
@@ -75,61 +72,9 @@
                     else :
                         get_template_part( 'template-parts/content', 'none' );
                     endif; ?>
-                </div>
-            </div> <!-- .column 2 (with posts) -->
-        </div> <!-- .row -->
-    </section> <!-- .container -->
-<section class="container">
-    <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 ">
-            <div class="post__list--aside">
-                <?php
-                if ( have_posts() ) :
-                    if ( is_home() && ! is_front_page() ) : ?>
-                        <header>
-                            <h2 class="title"><?php single_post_title(); ?></h2>
-                        </header>
-                        <?php
-                    endif;
-
-                    // START POST LOOP (JS)
-                    $args = array (
-                        'showposts' => '3',
-                        'cat'=> '-10'
-                    );
-                    $recent = new WP_Query($args); // Excludes promoted category
-                    while($recent->have_posts()):$recent->the_post();
-                        ?>
-
-                        <article class="post__thumbnail">
-                            <div class="thumbnail__box">
-                                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="thumbnail__img--crop">
-                                    <?php if ( has_post_thumbnail() ) : ?>
-                                        <img src="<?php the_post_thumbnail_url('medium');?>" alt="<?php the_title_attribute(); ?>" class="thumbnail__img" />
-                                    <?php else: ?>
-                                        <img src="https://i.ytimg.com/vi/Bor5lkRyeGo/hqdefault.jpg" alt="<?php the_title_attribute(); ?>" class="thumbnail__img" />
-                                    <?php endif; ?>
-                                </a>
-                                <a class="thumbnail__category" href="#"> Kategoria </a>
-                            </div>
-                            <!--/ Thumbnail -->
-                            <div class="thumbnail__desc">
-                                <span class="thumbnail__date"><?php echo get_the_date(); ?></span>
-                                <a href="<?php the_permalink(); ?>" class="thumbnail__header"> <h3><?php echo the_title() ; ?> </h3></a>
-                                <div class="thumbnail__text"> <?php echo the_excerpt(); ?><div>
-                                    </div>
-                        </article>
-
-                        <?php
-                    endwhile; // END POST LOOP
-                //the_posts_navigation();
-                else :
-                    get_template_part( 'template-parts/content', 'none' );
-                endif; ?>
-            </div>
-        </div> <!-- .column 2 (with posts) -->
-    </div>
-</section>
+            
+        </div>
+    </section>
 
 <?php
 //get_sidebar();
