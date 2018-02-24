@@ -2,7 +2,9 @@
 // image+category and header(title) with description
 
 @import "../variable";
-@import"./post/post_thumbnail";
+@import "./post/thumbnail";
+@import "./post/article";
+@import "./post/sidebar";
 
 // PRIMARY POSTS
 .post__primary {

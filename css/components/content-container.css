@@ -1,0 +1,25 @@
+.main {
+  margin-top: -80px;
+  padding: 20px;
+  padding-top: 60px;
+  background: #1a024e;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+
+.grid__mesh {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+@media (max-width: 992px) {
+  .main {
+    padding: 0px;
+    padding-top: 15px;
+    margin-top: -20px; } }
+@media (max-width: 576px) {
+  .main {
+    padding: 0px;
+    padding-top: 0px;
+    margin-top: -10px; } }
+
+/*# sourceMappingURL=content-container.css.map */

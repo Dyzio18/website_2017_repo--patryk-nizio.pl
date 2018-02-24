@@ -1,0 +1,17 @@
+html {
+  height: 100vh; }
+
+html, body {
+  width: 100%;
+  min-height: 100vh !important;
+  background: #000039;
+  background: -webkit-linear-gradient(#000039, #1a024e);
+  /* Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#000039, #1a024e);
+  /* Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#000039, #1a024e);
+  /* Firefox 3.6 to 15 */
+  background: linear-gradient(#000039, #1a024e);
+  /* Standard syntax (must be last) */ }
+
+/*# sourceMappingURL=main.css.map */

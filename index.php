@@ -2,19 +2,20 @@
 
     <header style="height:100vh; background: url('https://blog.spoongraphics.co.uk/wp-content/uploads/2015/flat-planet/vector-planet.jpg') no-repeat center center fixed;   background-size: cover;
 ">
-
+    <h1 class="h1" style="position:absolute; top:350px; text-align:center; width:100%; background:#eee; color:#00f;"> Strona w przebudowie  </h1>
 
     </header>
 
 
     <section id="content" class="container main">
         <div class="grid__mesh">
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <h2 class="title h1 text--center p-t-45"> 
-                    Hello World!
-                </h2>
-
-            </div> <!-- Greetings -->
+            <div class="post__thumbnail"><!-- Greetings -->
+                <div class="thumbnail__box">
+                    <h2 class="title h1 text--center p-t-45"> 
+                        Hello World!
+                    </h2>
+                </div> 
+            </div><!-- Greetings -->
 
                     <?php
                     if ( have_posts() ) :
@@ -22,19 +23,19 @@
                             <header>
                                 <h2 class="title"><?php single_post_title(); ?></h2>
                             </header>
-                            <?php
+                            <?php 
                         endif;
 
                         // START POST LOOP
                         $args = array (
-                            'showposts' => '3',
+                            'showposts' => '9',
                             'cat'=> '-10'
                         );
                         $recent = new WP_Query($args); // Excludes promoted category
                         while($recent->have_posts()):$recent->the_post();
                             ?>
 
-                            <article class=" col-6-lg col-md-6 col-sm-12 post__thumbnail">
+                            <article class="  post__thumbnail">
                                 <div class="thumbnail__box">
                                     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="thumbnail__img--crop">
                                         <?php if ( has_post_thumbnail() ) : ?>
@@ -42,7 +43,7 @@
                                         <?php else: ?>
                                             <img src="http://maxpixel.freegreatpicture.com/static/photo/1x/Island-Flat-Design-Ocean-Ducks-Sea-Deserted-Island-3028648.png" alt="<?php the_title_attribute(); ?>" class="thumbnail__img" />
                                         <?php endif; ?>
-                                        <h3 class="thumbnail__title title h3"> <?php echo the_title() ; ?> </h3>
+                                        <h3 class="link--clear thumbnail__title   h3"> <?php echo the_title() ; ?> </h3>
                                         <span class="thumbnail__date"><?php echo get_the_date(); ?></span>
                                     </a>
 

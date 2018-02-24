@@ -1,0 +1,75 @@
+@import "../../variable";
+
+.widget-area{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.widget {
+    color: $text_c;
+
+    a{
+        color: $text_c;
+        //text-decoration: none;
+    }
+}
+
+.widget-title {
+    color: $title_c;
+}
+
+// Ostatnie wpisy
+.widget_recent_entries{
+
+
+    ul{
+        list-style: none;
+        li{
+
+        }
+    }
+}
+
+// Kategorie
+.widget_categories {
+
+    ul{
+        list-style: none;
+        li{
+
+        }
+    }
+}
+
+// Tagi
+.widget_tag_cloud {
+
+    .tag_cloud{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        align-items: center;
+    }
+
+    a {
+        font-size: 0.9rem !important;
+        margin-bottom: 5px !important;
+        text-decoration: none;
+    }
+    .tag-cloud-link{
+        border-radius: 5px;
+        padding: 0px 8px 0px 8px;
+        background: chocolate;
+    }
+}
+
+
+@media screen and (max-width: $md) {
+    .widget-area{
+        flex-direction: row;
+    }
+
+}

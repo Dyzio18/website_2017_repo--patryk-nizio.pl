@@ -1,6 +1,7 @@
 <?php
 /**
  * The template for displaying archive pages
+ * category
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -47,5 +48,5 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+//get_sidebar();
 get_footer();

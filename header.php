@@ -26,9 +26,7 @@
 <nav class="navbar">
 	<div class="navbar__desktop">
 		<div class="navbar__search">
-			<div class="search__bar">
-				<input class="search__input" placeholder="" type="search" name="search" id="">
-			</div>
+			<?php get_search_form(); ?>
 		</div>
 		
 			<div class="navbar__logo"><a class="link--clear" href="<?php echo get_home_url(); ?>">Patryk 
@@ -37,9 +35,9 @@
 		
 		<div class="navbar__menu">
 			<ul class="list--inline">
-				<li><a href="#">blog</a></li>
-				<li><a href="<?php echo get_home_url(); ?>/portfolio">portfolio</a></li>
-				<li><a href="<?php echo get_home_url(); ?>/o-mnie">o mnie</a></li>
+				<li><a class="btn__full" href="<?php echo get_home_url(); ?>/blog">blog</a></li>
+				<li><a class="btn__full" href="<?php echo get_home_url(); ?>/portfolio">portfolio</a></li>
+				<li><a class="btn__full" href="<?php echo get_home_url(); ?>/o-mnie">o mnie</a></li>
 			</ul>
 		</div>
 	</div>

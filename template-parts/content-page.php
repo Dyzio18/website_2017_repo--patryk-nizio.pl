@@ -1,7 +1,7 @@
 <?php
 /**
- * Template part for displaying page content in page.php
- * DISPLAY POST PAGE
+ * //Template part for displaying page content in page.php
+ * //DISPLAY POST PAGE
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package dyzio_theme

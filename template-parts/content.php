@@ -7,9 +7,9 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <div class="container">
-        <header class="post__header">
+<article id="post-<?php the_ID(); ?>">
+    <div class="container main">
+        <header class="article__header ">
             <?php
             if ( is_singular() ) :
                 the_title( '<h1 class="post__title">', '</h1>' );
@@ -26,7 +26,7 @@
         </header><!-- .entry-header -->
 
         <?php dyzio_theme_post_thumbnail(); ?>
-        <div class="post__content">
+        <div class="post__content ">
             <?php
             the_content( sprintf(
                 wp_kses(
@@ -53,4 +53,7 @@
 		<?php // dyzio_theme_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
+
+
+
 

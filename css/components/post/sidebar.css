@@ -1,0 +1,40 @@
+.widget-area {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+
+.widget {
+  color: #f5f5f5; }
+  .widget a {
+    color: #f5f5f5; }
+
+.widget-title {
+  color: #00e0a3; }
+
+.widget_recent_entries ul {
+  list-style: none; }
+
+.widget_categories ul {
+  list-style: none; }
+
+.widget_tag_cloud .tag_cloud {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: center; }
+.widget_tag_cloud a {
+  font-size: 0.9rem !important;
+  margin-bottom: 5px !important;
+  text-decoration: none; }
+.widget_tag_cloud .tag-cloud-link {
+  border-radius: 5px;
+  padding: 0px 8px 0px 8px;
+  background: chocolate; }
+
+@media screen and (max-width: 992px) {
+  .widget-area {
+    flex-direction: row; } }
+
+/*# sourceMappingURL=sidebar.css.map */
