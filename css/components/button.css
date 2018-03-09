@@ -1,16 +1,14 @@
 .btn__full {
-  background: #1a024e;
+  background: #f4f4f4;
   padding: 10px 30px 10px 30px;
-  border-radius: 5px;
+  border-radius: 50px;
+  border: 2px #fff solid;
   text-decoration: none;
   font-weight: bold;
-  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
   transition: 0.3s; }
 
 .btn__full:hover {
-  background: #673AB7;
+  background: #eee;
   transition: 0.3s; }
 
 /*# sourceMappingURL=button.css.map */

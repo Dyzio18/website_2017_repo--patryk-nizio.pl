@@ -1,34 +1,32 @@
+
+//@import "theme/dark";
+@import "theme/light";
+
 $xs:576px;
 $sm:768px;
 $md: 992px;
 $lg:1200px;
 
-
 // Border radius
 $radius: 5px;
-
-// category,
-$secondary: #E53935;
-$secondary__dark:#c62828;
-
-// Colors of background
-$background_top: #000039;
-$background_bottom: #1a024e;
-
-// SEARCH BAR
-$search_top:#34006a;
-$search_bottom:#010058;
-
-
-// ***** [!!!] *****
-// TEXT
-$text_c: #f5f5f5; // paragraph, content...
-$title_c: #00e0a3; // title
-$text_awarded_c: #0c00dd; // main header, awarded text
-$black_lt: #333333;
-
-
-// COLORS
 $white: #fff;
 
 
+$secondary: $theme_secondary;
+$secondary__dark: $theme_secondary__dark;
+
+$background_top: $theme_background_top;
+$background_bottom: $theme_background_bottom;
+
+$background_content: $theme_background_content;
+
+$search_top: $theme_search_top;
+$search_bottom: $theme_search_bottom;
+
+$text_c: $theme_text_c; // paragraph, content...
+$title_c: $theme_title_c; // title
+$text_awarded_c: $theme_text_awarded_c; // main header, awarded text
+$black_lt: $theme_black_lt;
+
+$navbar_bg: $theme_navbar_bg;
+$navbar_bg_dark: $theme_navbar_bg_dark;

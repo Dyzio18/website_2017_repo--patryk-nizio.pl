@@ -1,9 +1,23 @@
 body {
-  font-size: 17px;
-  color: #f5f5f5; }
+  color: #333; }
 
+@media (min-width: 1200) {
+  html {
+    font-size: 16px; } }
+@media (max-width: 858px) {
+  html {
+    font-size: 13px; } }
+@media (max-width: 780px) {
+  html {
+    font-size: 12px; } }
+@media (max-width: 702px) {
+  html {
+    font-size: 11px; } }
+@media (max-width: 724px) {
+  html {
+    font-size: 10px; } }
 .title {
-  color: #00e0a3;
+  color: #333;
   font-weight: bold; }
 
 .h1 {
@@ -17,11 +31,11 @@ body {
 
 .title--small {
   font-size: 25px;
-  color: #00e0a3;
+  color: #333;
   font-weight: bold; }
 
 .title--awarded {
-  font-size: 87px;
+  font-size: 5rem;
   letter-spacing: 10px;
   color: #0c00dd;
   font-weight: bold;
@@ -36,11 +50,19 @@ body {
 .bold {
   font-weight: bold; }
 
+.underline {
+  text-decoration: underline; }
+
 .text--center {
   text-align: center; }
 
 .link--clear, .link--clear:hover, .link--clear:visited {
-  color: #f5f5f5;
+  color: #333;
   text-decoration: none; }
+
+@media screen and (max-width: 768px) {
+  .title--awarded {
+    font-size: 4rem;
+    letter-spacing: 5px; } }
 
 /*# sourceMappingURL=typography.css.map */

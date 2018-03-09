@@ -24,6 +24,32 @@
 
 
 <nav class="navbar">
+	<!-- MOBILE -->
+	<div class="navbar__mobile ">
+		<div id="navbar__icon">
+			<i class="fas fa-bars fa-3x "></i>
+		</div>
+		<div class="navbar__side navbar__mobile--hidden">
+			<div class="navbar__search">
+				<?php get_search_form(); ?>
+			</div>
+			<ul class="list__menu">
+				<li><a href="<?php echo get_home_url(); ?>/blog"><i class="fas fa-pencil-alt "> </i>  blog</a></li>
+				<li><a href="<?php echo get_home_url(); ?>/portfolio"><i class="fas fa-briefcase"> </i>  portfolio</a></li>
+				<li><a href="<?php echo get_home_url(); ?>/o-mnie"><i class="far fa-address-card"> </i>  o mnie</a></li>
+			</ul>
+			<ul class="list__menu">
+				<li> Social: </li>
+				<li><a href="https://www.linkedin.com/in/patryk-nizio/"><i class="fab fa-linkedin"> </i> Linkedin</a></li>
+				<li><a href="https://github.com/Dyzio18"><i class="fab fa-github-square"> </i> Github</a></li>
+			</ul>
+			
+		</div>
+
+
+	</div>
+	
+	<!-- DESKTOP -->
 	<div class="navbar__desktop">
 		<div class="navbar__search">
 			<?php get_search_form(); ?>
@@ -42,4 +68,5 @@
 		</div>
 	</div>
 </nav>
+<div class="site-main"> 
 

@@ -1,9 +1,39 @@
 @import "../variable";
 
 body {
-    font-size: 17px;
     color: $text_c;
 }
+
+@media (min-width: 1200) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 780px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 702px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 724px) {
+    html {
+        font-size: 10px;
+    }
+}
+
 
 .title {
     color: $title_c;
@@ -27,7 +57,7 @@ body {
 }
 
 .title--awarded {
-    font-size: 87px;
+    font-size: 5rem;
     letter-spacing: 10px;
     color: $text_awarded_c;
     font-weight: bold;
@@ -45,6 +75,9 @@ body {
 .bold{
     font-weight: bold;
 }
+.underline{
+    text-decoration: underline;
+}
 
 .text--center {
     text-align: center;
@@ -53,4 +86,13 @@ body {
 .link--clear, .link--clear:hover, .link--clear:visited { 
     color: $text_c;
     text-decoration: none;
+}
+
+@media screen and (max-width: $sm)  {
+    .title--awarded {
+        font-size: 4rem;
+        letter-spacing: 5px;
+    }
+
+
 }

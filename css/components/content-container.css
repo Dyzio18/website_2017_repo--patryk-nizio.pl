@@ -1,9 +1,10 @@
 .main {
-  margin-top: -80px;
+  margin-top: -50px;
+  border-radius: 15px;
   padding: 20px;
   padding-top: 60px;
-  background: #1a024e;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  background: #fff;
+  box-shadow: 0px 20px 150px #d6dee4; }
 
 .grid__mesh {
   display: flex;
@@ -13,12 +14,17 @@
 
 @media (max-width: 992px) {
   .main {
-    padding: 0px;
+    padding: 10px;
     padding-top: 15px;
     margin-top: -20px; } }
 @media (max-width: 576px) {
+  .col-sm-12 {
+    margin: 0px;
+    padding: 0px; }
+
   .main {
-    padding: 0px;
+    width: 100%;
+    padding: 5px;
     padding-top: 0px;
     margin-top: -10px; } }
 

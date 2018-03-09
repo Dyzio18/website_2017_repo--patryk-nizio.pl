@@ -1,3 +1,5 @@
+@import "../variable";
+
 .profil {
     padding-top: 280px;
     display: flex;
@@ -26,7 +28,6 @@
     margin-left: auto;
     margin-right: auto;
     border-top: 3px solid $text_c;
-
     .profil__links{
         padding: 30px 30px 0px 30px;
         ul {
@@ -35,17 +36,14 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-    
             li {
                float: left;
             }
-    
             li a {
                 color: $text_c;
             }
         }
     }
-
 }
 
 .technology {
@@ -55,11 +53,9 @@
     align-content: center;
     align-items: center;
     padding-top: 50px;
-
 }
 .technology__desc {
     width: 40%;
-
 }
 .technology__mesh {
     width: 50%;
@@ -67,8 +63,6 @@
     flex-direction: column;
     flex-wrap: wrap;
     cursor: pointer;
-
-
     .mesh__row{
         margin-top: 70px;
         display: flex;
@@ -82,10 +76,9 @@
             height: 100px;
         }
     }
-
 }
 
-@media screen and (max-width: 768px)  {
+@media screen and (max-width: $sm)  {
     .profil {
         flex-direction: column-reverse;
     }
@@ -93,6 +86,39 @@
         margin-left: 0px;
         p {
             padding-left: 10px;
+        }
+    }
+
+    .profil__bar{
+        width: 100%;
+        .profil__links{
+            ul {
+                display:block;      
+                li {
+                    float: none;
+                    display:block;    
+                    margin-top: 5px;
+                    font-size: 1.3rem;  
+                }
+            }
+        }
+    }
+
+    .technology {
+        flex-direction: column;
+    }
+    .technology__desc {
+        width: 100%;
+    }
+    .technology__mesh {
+        width: 90%;
+        .mesh__block {
+            width: 70px;
+            min-height: 70px;
+            img{
+                width: 70px;
+                height: 70px;
+            }
         }
     }
 

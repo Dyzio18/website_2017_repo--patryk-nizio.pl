@@ -12,7 +12,7 @@ get_header(); ?>
 	<div class="container">
 		<div class="row p-t-200"> <!-- POST FRAME -->
 
-			<main id="main" class="col-lg-9 col-md-10 col-sm-12">
+			<main id="main" class="col-lg-9 col-md-12 col-sm-12">
 					<?php
 					while ( have_posts() ) : the_post();
 						get_template_part( 'template-parts/content', get_post_type() );

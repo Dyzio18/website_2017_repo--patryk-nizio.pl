@@ -4,14 +4,14 @@ html {
 html, body {
   width: 100%;
   min-height: 100vh !important;
-  background: #000039;
-  background: -webkit-linear-gradient(#000039, #1a024e);
+  background: #f7f9fb;
+  background: -webkit-linear-gradient(#f7f9fb, #f4f4f4);
   /* Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#000039, #1a024e);
+  background: -o-linear-gradient(#f7f9fb, #f4f4f4);
   /* Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#000039, #1a024e);
+  background: -moz-linear-gradient(#f7f9fb, #f4f4f4);
   /* Firefox 3.6 to 15 */
-  background: linear-gradient(#000039, #1a024e);
+  background: linear-gradient(#f7f9fb, #f4f4f4);
   /* Standard syntax (must be last) */ }
 
 /*# sourceMappingURL=main.css.map */

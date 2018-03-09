@@ -10,9 +10,9 @@
 
 <section class="container">
     <div class="profil">
-        <img class="profil__img" src="http://localhost/wordpress/wp-content/uploads/2018/01/12735678_928109967238768_2114841407_n.jpg" alt="Zdjecie profilowe" />
+        <img class="profil__img" src="https://avatars0.githubusercontent.com/u/18214998?s=460&v=4" alt="Zdjecie profilowe" />
         <div class="profil__desc">
-            <h2 class="title"> Hello World! </h2>
+            <h2 class="h2 title"> Hello World! </h2>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas dolorem nobis nihil quasi dolores accusantium
                 modi non laborum rerum dolorum? Nam, laborum vero. Facilis incidunt, quod dolorem nostrum tenetur quaerat.
@@ -29,10 +29,10 @@
     <div class="profil__bar">
         <div class="profil__links">
             <ul>              
-                <li><a class="link--clear bold" href="https://www.linkedin.com/in/patryk-nizio/">Linkedin</a></li> 
-                <li><a class="link--clear bold" href="https://github.com/Dyzio18">Github</a></li>
+                <li><a class="bold" href="https://www.linkedin.com/in/patryk-nizio/">Linkedin</a></li> 
+                <li><a class="bold" href="https://github.com/Dyzio18">Github</a></li>
                 <li><span class="bold">patryk.nizio@gmail.com</span></li>
-                <li>CV <a class="link--clear bold"  href="http://">pl</a> / <a class="link--clear bold" href="http://">eng</a></li>
+                <li class="bold">CV: <a class="bold underline"  href="http://">pl</a> / <a class=" bold underline" href="http://">eng</a></li>
             </ul>
         </div>
     </div>
@@ -41,8 +41,8 @@
 <section class="container">
     <h3 class="title--awarded text--center"> Technologie </h3>
     <div class="technology">
-        <div id="techDesc" class="technology__desc">
-            <h4 class="title">Lorem ipsum </h4>
+        <div id="techDesc" class="technology__desc ">
+            <h4 class="h3 title">Lorem ipsum </h4>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas dolorem nobis nihil quasi dolores accusantium
                 modi non laborum rerum dolorum? Nam, laborum vero. Facilis incidunt, quod dolorem nostrum tenetur quaerat.
@@ -114,7 +114,7 @@ const techBox = document.getElementsByClassName('mesh__block')
 
     for(let i = 0; i < techBox.length; i++){
         techBox[i].addEventListener('click', function () {
-            techTarget.innerHTML = '<h4 class="title">'+ techDesc[i].title +'</h4>' + '<p>' + techDesc[i].desc + '</p>';
+            techTarget.innerHTML = '<h4 class="h3 title">'+ techDesc[i].title +'</h4>' + '<p>' + techDesc[i].desc + '</p>';
         });
     }
 
