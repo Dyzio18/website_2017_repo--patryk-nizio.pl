@@ -14,7 +14,6 @@
                     <h2 class="title h1 text--center p-t-45"> 
                         Hello World!
                     </h2>
-                    <button id="colorToggle" style="width:200px;">KOLOR</button>
                 </div> 
             </div><!-- Greetings -->
 
@@ -78,31 +77,6 @@
             
         </div>
     </section>
-
-
-<script>
-    var COLOR = 0; // light
-    let colorBtn = document.getElementById("colorToggle");
-
-    colorBtn.addEventListener('click', function() { 
-        switch (COLOR){
-            case 0:
-                document.getElementById('dyzio_theme-style_dark-css').disabled  = false;
-                document.getElementById('dyzio_theme-style_light-css').disabled = true;
-                COLOR = 1;
-                break;
-            case 1: 
-                document.getElementById('dyzio_theme-style_dark-css').disabled  = true;
-                document.getElementById('dyzio_theme-style_light-css').disabled = false;
-                COLOR = 0;
-                break;
-        }
-     }, false);
-
-
-
-</script>
-
 
 <?php
 //get_sidebar();

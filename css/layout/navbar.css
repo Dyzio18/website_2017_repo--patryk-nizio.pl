@@ -133,9 +133,10 @@
       .navbar .navbar__mobile .navbar__search {
         width: 85%; }
       .navbar .navbar__mobile .list__menu {
-        font-size: 2rem; }
+        font-size: 2rem;
+        margin-top: 50px; }
         .navbar .navbar__mobile .list__menu li {
-          margin-top: 10px;
+          margin-top: 20px;
           list-style: none;
           display: block; }
           .navbar .navbar__mobile .list__menu li a {

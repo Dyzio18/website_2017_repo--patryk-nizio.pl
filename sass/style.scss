@@ -1,28 +1,22 @@
-/**
-@Dyzio 02.03.18
 
-*/
-
-
-
-
-// GRID c
+// GRID & RESET
 @import "vendor/bootstrap-reboot";
 @import "vendor/bootstrap-grid";
-//
+
+// BASE
 @import "base/typography";
-//dd
+
+// LAYOUT (nav, footer, sites...)
 @import "layout/main";
 @import "layout/navbar";
 @import "layout/footer";
 @import "layout/about-me";
 
-
-
+// COMPONENTS
 @import "components/button";
 @import "components/post";
 @import "components/content-container";
 @import "components/contrast";
 
-
+// HELPERS
 @import "helpers/padding-margin";

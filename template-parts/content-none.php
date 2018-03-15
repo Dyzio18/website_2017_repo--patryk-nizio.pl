@@ -9,9 +9,11 @@
 
 ?>
 
+<div class="m-t-250"></div>
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'dyzio_theme' ); ?></h1>
+		<h1 class="page-title"><?php esc_html_e( 'Nie znaleziono', 'dyzio_theme' ); ?></h1>
+		<i class="far fa-frown fa-5x"></i>
 	</header><!-- .page-header -->
 
 	<div class="page-content">
@@ -35,7 +37,7 @@
 
 		<?php elseif ( is_search() ) : ?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'dyzio_theme' ); ?></p>
+			<p class="m-t-25 m-b-25"><?php esc_html_e( 'Przykro mi ale nie znaleziono żadnych wyników, spróbuj jeszcze raz z innymi słowami kluczowymi', 'dyzio_theme' ); ?></p>
 			<?php
 				get_search_form();
 
