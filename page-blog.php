@@ -41,7 +41,7 @@ get_header(); ?>
 
                             <article class="post__thumbnail" style="background-image: url(<?php
                                 if ( has_post_thumbnail() ){
-                                    the_post_thumbnail_url('medium');
+                                    the_post_thumbnail_url('large');
                                 } else {
                                     echo "https://patryk-nizio.pl/wp-content/uploads/2018/03/temporary.png";
                                 }                          

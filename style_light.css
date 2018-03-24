@@ -2267,7 +2267,7 @@ html, body {
             text-decoration: underline; } }
 .footer {
   margin-top: 200px;
-  background: #34495e;
+  background: #3A3A3A;
   color: #fff; }
 
 .footer__content {
@@ -2282,13 +2282,24 @@ html, body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
-  .footer__container .footer__link {
-    list-style: none;
-    padding-left: 0; }
-    .footer__container .footer__link a {
-      margin: 10px;
+  .footer__container .h3 {
+    margin-top: 30px; }
+  .footer__container .footer__social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center; }
+    .footer__container .footer__social a {
+      font-size: 3rem;
+      margin: 15px;
+      text-decoration: none;
       color: #fff;
-      text-decoration: none; }
+      cursor: pointer;
+      transition: 0.5s; }
+    .footer__container .footer__social a:hover {
+      color: #ccc;
+      transition: 0.5s; }
   .footer__container .footer__tags {
     display: flex;
     flex-wrap: wrap; }
@@ -2305,9 +2316,25 @@ html, body {
       border-radius: 0 0 10px 0; }
     .footer__container .footer__tags a:hover {
       background: #c62828; }
+  .footer__container .footer__category {
+    display: flex;
+    flex-wrap: wrap; }
+    .footer__container .footer__category .tag__hash {
+      font-weight: bold;
+      padding-right: 3px; }
+    .footer__container .footer__category a {
+      font-weight: bold;
+      margin: 5px 3px 5px 3px;
+      color: #fff;
+      text-decoration: none;
+      background: #E53935;
+      padding: 2px 5px 2px 5px;
+      border-radius: 0 0 10px 0; }
+    .footer__container .footer__category a:hover {
+      background: #c62828; }
 
 .footer__scrap {
-  margin-top: 200px;
+  margin-top: 100px;
   height: 50px;
   width: 100%;
   background: #0d2237;
@@ -2588,8 +2615,10 @@ html, body {
 .widget_tag_cloud a {
   font-size: 0.9rem !important;
   margin-bottom: 5px !important;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #fff; }
 .widget_tag_cloud .tag-cloud-link {
+  color: #fff;
   border-radius: 5px;
   padding: 0px 8px 0px 8px;
   background: chocolate; }
@@ -2638,6 +2667,54 @@ html, body {
   font-size: 1.8rem;
   background-color: #fff;
   border: 2px solid #333; }
+
+.form__input {
+  width: 100%; }
+  .form__input input, .form__input textarea {
+    background: none;
+    color: #fff;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid rgba(184, 171, 171, 0.719);
+    transition: 0.5s; }
+  .form__input input:focus {
+    border-bottom: 2px solid #eee;
+    transition: 0.5s; }
+
+.form__textarea {
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  background: none;
+  height: 180px;
+  background: rgba(238, 222, 222, 0.055);
+  border: none; }
+
+.form__textarea:focus {
+  width: 100%;
+  background: rgba(238, 222, 222, 0.125); }
+
+.form__recaptcha {
+  margin-right: auto;
+  margin-left: auto; }
+
+.form__submit {
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  background: #E53935;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.wpcf7-form-control-wrap, .wpcf7-form-control {
+  display: flex;
+  justify-content: center; }
 
 .m-t-5 {
   margin-top: 5px !important; }

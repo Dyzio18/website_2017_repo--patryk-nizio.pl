@@ -15,7 +15,7 @@
 		<div class="thumbnail__box">
 				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="thumbnail__img--crop">
 					<?php if ( has_post_thumbnail() ) : ?>
-						<img src="<?php the_post_thumbnail_url('medium');?>" alt="<?php the_title_attribute(); ?>" class="thumbnail__img" />
+						<img src="<?php the_post_thumbnail_url('large');?>" alt="<?php the_title_attribute(); ?>" class="thumbnail__img" />
 					<?php else: ?>
 						<img src="http://maxpixel.freegreatpicture.com/static/photo/1x/Island-Flat-Design-Ocean-Ducks-Sea-Deserted-Island-3028648.png" alt="<?php the_title_attribute(); ?>" class="thumbnail__img" />
 					<?php endif; ?>
@@ -71,3 +71,5 @@
 		<?php //dyzio_theme_entry_footer(); ?>
 	</footer><!-- .entry-footer ->
 </article>#post-<?php the_ID(); ?> -->
+
+

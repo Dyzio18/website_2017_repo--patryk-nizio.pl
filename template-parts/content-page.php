@@ -26,6 +26,7 @@
         ?>
     </div><!-- .entry-content -->
 
+
     <div class="row">
         <div class="container">
             <?php if ( get_edit_post_link() ) : ?>

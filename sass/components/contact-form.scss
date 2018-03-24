@@ -1,0 +1,58 @@
+@import "../variable";
+
+.form__input {
+    width: 100%;
+    input, textarea {
+        background: none;
+        color: $white;
+        width: 100%;
+        padding: 5px;
+        border: none;
+        border-bottom: 2px solid rgba(184, 171, 171, 0.719);
+        transition: 0.5s;
+    }
+
+    input:focus{
+        border-bottom: 2px solid #eee;
+        transition: 0.5s;
+    }
+}
+
+.form__textarea{
+    border-radius: 10px;
+    color: $white;
+    padding: 10px;
+    width: 100%;
+    background: none;
+    height: 180px;
+    background: rgba(238, 222, 222, 0.055);
+    border: none;
+}
+
+.form__textarea:focus{
+    width: 100%;
+    background: rgba(238, 222, 222, 0.125);
+}
+
+.form__recaptcha{
+    margin-right: auto;
+    margin-left: auto;
+}
+.form__submit{
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    background: $secondary;
+    color: $white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 280px;
+    margin-right: auto;
+    margin-left: auto;   
+}
+
+.wpcf7-form-control-wrap, .wpcf7-form-control{
+    display: flex;
+    justify-content: center;
+}
+

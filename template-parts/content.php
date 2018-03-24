@@ -4,17 +4,19 @@
  * DISPLAY SPECIFIC POST CONTENT
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  * @package dyzio_theme
+ * 
+ * WYSWIETLANIE POJEDYNCZEGO POSTU 
  */
 ?>
 
 <article id="post-<?php the_ID(); ?>">
     <div class="container main">
-        <header class="article__header ">
+        <header class="article__header m-b-40">
             <?php
             if ( is_singular() ) :
-                the_title( '<h1 class="post__title">', '</h1>' );
+                the_title( '<h1 class="post__title h1">', '</h1>' );
             else :
-                the_title( '<h2 class="post__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+                the_title( '<h2 class="post__title h1"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
             endif;
             /*
             if ( 'post' === get_post_type() ) : ?>
@@ -26,7 +28,7 @@
         </header><!-- .entry-header -->
 
         <?php dyzio_theme_post_thumbnail(); ?>
-        <div class="post__content ">
+        <div class="post__content m-t-75">
             <?php
             the_content( sprintf(
                 wp_kses(
@@ -40,7 +42,6 @@
                 ),
                 get_the_title()
             ) );
-
             /* wp_link_pages( array(
                  'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'dyzio_theme' ),
                  'after'  => '</div>',
@@ -53,7 +54,4 @@
 		<?php // dyzio_theme_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
-
-
-
 
