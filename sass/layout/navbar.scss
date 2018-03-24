@@ -9,13 +9,14 @@
     width: 100%;
     background: $navbar_bg; 
     transition: 0.6s;
-    box-shadow: 0px 0px 20px #d6dee4;
+    box-shadow: 0px 0px 20px $shadow_color;
 }
 
 .navbar--shrink {
     height: 60px;
     .navbar__logo {
-        font-size: 1.5em;
+        font-size: 1.4em;
+        line-height: 1.4rem;
         letter-spacing: 2px;
         transition: 0.6s
     }
@@ -44,6 +45,24 @@
     }
 
 }
+
+.navbar__link{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 10px;
+    //border-bottom: 5px solid $secondary;
+    border-radius: 0 5px 0 5px;
+    padding: 3px 5px 2px 5px;
+}
+.navbar__link:hover{
+    text-decoration: none;
+    font-size: 1.3em;
+    background: $secondary;
+    color: $white;
+    transition: 0.5s;
+}
+
 
 .search__bar{
     width: 250px;
@@ -80,6 +99,7 @@
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 5px;
+    line-height: 3rem;
     transition: 0.6s;
 
     a, a:hover{
@@ -126,6 +146,37 @@
 
 // MOBILE 
 @media screen and (max-width: $sm)  {
+
+    .navbar--shrink {
+        height: inherit;
+        .navbar__logo {
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            line-height: 1.5rem;
+            transition: 0s;
+        }
+        transition: 0s
+    }
+
+    .navbar__logo {
+        z-index: -1;
+        width: 100%;
+        padding-top: 10px;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        line-height: 1.5rem;
+        transition: 0s;
+        
+        font-weight: bold;
+        white-space: pre-line;
+        text-transform: uppercase;
+        text-align: center;    
+        a, a:hover{
+            text-decoration: none;
+            color: $text_c;
+        }
+    }
+
     .navbar__desktop{
         display:none
     }
@@ -139,7 +190,7 @@
             left: 0;
           //  display: block;
             transition: 0.6s;
-            box-shadow: 0px 20px 150px #d6dee4;
+            box-shadow: 0px 20px 150px $shadow_color;
         }
         .navbar__mobile--hidden{
             position: fixed;
@@ -148,7 +199,7 @@
             transition: 0.6s;
         }
         .navbar__mobile{
-            display:block;
+            display:flex;
 
             #navbar__icon{
                 z-index: 9999;
@@ -165,6 +216,8 @@
                 background: $navbar_bg_dark;
                 padding-top: 80px;
                 padding-left: 10px;
+                overflow-y: scroll;
+
             }
             .navbar__search{
                 width: 85%;

@@ -10,12 +10,12 @@
 @import "layout/main";
 @import "layout/navbar";
 @import "layout/footer";
-@import "layout/about-me";
+@import "layout/pages/about-me";
+@import "layout/pages/index-page";
 
 // COMPONENTS
 @import "components/button";
-@import "components/post";
-@import "components/content-container";
+@import "components/post-main";
 @import "components/contrast";
 
 // HELPERS

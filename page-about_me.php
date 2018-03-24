@@ -29,10 +29,10 @@
     <div class="profil__bar">
         <div class="profil__links">
             <ul>              
-                <li><a class="bold" href="https://www.linkedin.com/in/patryk-nizio/">Linkedin</a></li> 
-                <li><a class="bold" href="https://github.com/Dyzio18">Github</a></li>
+                <li><a class="bold link" href="https://www.linkedin.com/in/patryk-nizio/">Linkedin</a></li>
+                <li><a class="bold link" href="https://github.com/Dyzio18">Github</a></li>
                 <li><span class="bold">patryk.nizio@gmail.com</span></li>
-                <li class="bold">CV: <a class="bold underline"  href="http://">pl</a> / <a class=" bold underline" href="http://">eng</a></li>
+                <li class="bold">CV: <a class="bold link underline"  href="https://patryk-nizio.pl/files/work/cv/cv_patryk-nizio-pl.pdf">pl</a> </li>
             </ul>
         </div>
     </div>
@@ -50,19 +50,19 @@
         </div>
         <div class="technology__mesh">
             <div class="mesh__row"> 
-                <div class="mesh__block"><img src="http://www.northeastjsconference.com/wp-content/themes/jsconf/images/learn-javascript.png" alt="javascript"></div>
-                <div class="mesh__block"><img src="https://cdn2.iconfinder.com/data/icons/nodejs-1/512/nodejs-512.png" alt="node.js"></div>
-                <div class="mesh__block"><img src="http://www.freepngimg.com/download/c++/2-2-c++-png-clipart.png" alt="c/cpp"></div>
+                <div class="mesh__block"><i class="fab fa-js fa-5x"></i></div>
+                <div class="mesh__block"><i class="fab fa-node fa-5x"></i></div>
+                <div class="mesh__block"><i class="fab fa-codiepie fa-5x"></i></div>
             </div>
             <div class="mesh__row"> 
-                <div class="mesh__block"><img src="https://www.shareicon.net/data/128x128/2016/08/01/640324_logo_512x512.png" alt="react"></div>
-                <div class="mesh__block"><img src="https://www.python.org/static/opengraph-icon-200x200.png" alt="python"></div>
-                <div class="mesh__block"><img src="https://sdtimes.com/wp-content/uploads/2015/12/1204.sdt-php.png" alt="php"></div>
+                <div class="mesh__block"><i class="fab fa-react fa-5x"></i></div>
+                <div class="mesh__block"><i class="fab fa-python fa-5x"></i></div>
+                <div class="mesh__block"><i class="fab fa-php fa-5x"></i></div>
             </div>
             <div class="mesh__row"> 
-                <div class="mesh__block"><img src="https://digitalworkshopcenter.com/wp-content/uploads/2014/10/html.png" alt="html i css"></div>
-                <div class="mesh__block"><img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="git"></div>
-                <div class="mesh__block"><img src="http://www.freepngimg.com/download/database/1-2-database-png.png" alt="bazy danych"></div>
+                <div class="mesh__block"><i class="fab fa-css3 fa-5x"></i></div>
+                <div class="mesh__block"><i class="fab fa-git fa-5x"></i></div>
+                <div class="mesh__block"><i class="fas fa-database fa-5x"></i></div>
             </div>
         </div>
     </div>

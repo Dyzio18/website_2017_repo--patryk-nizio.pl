@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,QAAQ;EACJ,WAAW,EAAE,IAAI;;AAGrB,gBAAgB;EACZ,UAAU,EAAE,IAAI",
-"sources": ["../../../sass/components/post/article.scss"],
-"names": [],
-"file": "article.css"
-}

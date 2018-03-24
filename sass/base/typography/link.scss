@@ -1,0 +1,34 @@
+//@import "../../variable";
+
+
+.link--clear, .link--clear:hover, .link--clear:visited { 
+    color: $text_c;
+    text-decoration: none;
+}
+
+
+ a:link {
+    color: $link;
+}
+
+a:visited {
+    color: $link;
+}
+a:hover {
+    color: $link_hover;
+    transition: 0.4s;
+}
+
+a:active {
+    color: $link_hover;
+} 
+
+.main{
+    a:hover {
+        background: $search_bottom;
+    }
+}
+
+.link:hover {
+    background: $search_bottom;
+}

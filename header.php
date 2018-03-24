@@ -29,6 +29,10 @@
 		<div id="navbar__icon">
 			<i class="fas fa-bars fa-3x "></i>
 		</div>
+		<div class="navbar__logo"><a class="link--clear" href="<?php echo get_home_url(); ?>">Patryk 
+				Nizio</a>
+		</div>
+		
 		<div class="navbar__side navbar__mobile--hidden">
 			<div class="navbar__search">
 				<?php get_search_form(); ?>
@@ -61,9 +65,9 @@
 		
 		<div class="navbar__menu">
 			<ul class="list--inline">
-				<li><a class="btn__full" href="<?php echo get_home_url(); ?>/blog">blog</a></li>
-				<li><a class="btn__full" href="<?php echo get_home_url(); ?>/portfolio">portfolio</a></li>
-				<li><a class="btn__full" href="<?php echo get_home_url(); ?>/o-mnie">o mnie</a></li>
+				<li><a class="navbar__link" href="<?php echo get_home_url(); ?>/blog">blog</a></li>
+				<li><a class="navbar__link" href="<?php echo get_home_url(); ?>/portfolio">portfolio</a></li>
+				<li><a class="navbar__link" href="<?php echo get_home_url(); ?>/o-mnie">o mnie</a></li>
 			</ul>
 		</div>
 	</div>

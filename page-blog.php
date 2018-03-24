@@ -39,14 +39,15 @@ get_header(); ?>
                         while($recent->have_posts()):$recent->the_post();
                             ?>
 
-                            <article class="  post__thumbnail">
+                            <article class="post__thumbnail" style="background-image: url(<?php
+                                if ( has_post_thumbnail() ){
+                                    the_post_thumbnail_url('medium');
+                                } else {
+                                    echo "https://patryk-nizio.pl/wp-content/uploads/2018/03/temporary.png";
+                                }                          
+                             ?>);">
                                 <div class="thumbnail__box">
                                     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="thumbnail__img--crop">
-                                        <?php if ( has_post_thumbnail() ) : ?>
-                                            <img src="<?php the_post_thumbnail_url('medium');?>" alt="<?php the_title_attribute(); ?>" class="thumbnail__img" />
-                                        <?php else: ?>
-                                            <img src="http://maxpixel.freegreatpicture.com/static/photo/1x/Island-Flat-Design-Ocean-Ducks-Sea-Deserted-Island-3028648.png" alt="<?php the_title_attribute(); ?>" class="thumbnail__img" />
-                                        <?php endif; ?>
                                         <h3 class="link--clear thumbnail__title   h3"> <?php echo the_title() ; ?> </h3>
                                         <span class="thumbnail__date"><?php echo get_the_date(); ?></span>
                                     </a>
@@ -61,14 +62,6 @@ get_header(); ?>
                                     }
                                     ?>
                                 </div>
-
-
-                                <!--/ Thumbnail
-                                <div class="thumbnail__desc">
-                                    <span class="thumbnail__date"><?php echo get_the_date(); ?></span>
-                                    <a href="<?php the_permalink(); ?>" class="thumbnail__header"> <h3><?php echo the_title() ; ?> </h3></a>
-                                    <div class="thumbnail__text"> <?php echo the_excerpt(); ?><div>
-                                </div> -->
                             </article>
 
                             <?php

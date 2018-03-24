@@ -1,43 +1,50 @@
 @import "../variable";
+@import "./typography/link";
 
-body {
+body, html {
     color: $text_c;
+    font-size: 18px;
 }
 
 @media (min-width: 1200) {
-    html {
-        font-size: 16px;
+    body, html {
+        font-size: 18px;
     }
 }
 
 @media (max-width: 858px) {
-    html {
-        font-size: 13px;
+    body, html {
+        font-size: 16px;
     }
 }
 
 @media (max-width: 780px) {
-    html {
-        font-size: 12px;
+    body, html {
+        font-size: 15px;
     }
 }
 
 @media (max-width: 702px) {
-    html {
-        font-size: 11px;
+    body, html {
+        font-size: 14px;
     }
 }
 
 @media (max-width: 724px) {
-    html {
-        font-size: 10px;
+    body, html {
+        font-size: 13px;
     }
 }
 
-
+p{
+    line-height: 1.8rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 .title {
     color: $title_c;
     font-weight: bold;
+    word-wrap: break-word;
 }
 
 .h1{
@@ -62,6 +69,8 @@ body {
     color: $text_awarded_c;
     font-weight: bold;
     text-transform: uppercase;
+    word-wrap: break-word;
+
 }
 
 .text--small {
@@ -83,15 +92,10 @@ body {
     text-align: center;
 }
 
-.link--clear, .link--clear:hover, .link--clear:visited { 
-    color: $text_c;
-    text-decoration: none;
-}
-
 @media screen and (max-width: $sm)  {
     .title--awarded {
-        font-size: 4rem;
-        letter-spacing: 5px;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
     }
 
 

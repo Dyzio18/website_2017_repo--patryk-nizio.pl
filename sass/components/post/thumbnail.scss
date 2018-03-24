@@ -2,7 +2,13 @@
 
 .post__thumbnail {
   margin-bottom: 50px;
-  width: 45%;
+  width: 46%;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
 
   // Image with category
@@ -38,7 +44,7 @@
       left: 15px;
       text-align: center;
       padding: 10px;
-      color: $text_c;
+      color: $white;
       background-color: $secondary;
       font-size: 0.9rem;
       text-decoration: none;
@@ -55,6 +61,7 @@
       top: 30px;
       font-weight: bold;
       padding: 10px;
+      color: $white;
       background: rgba(58, 67, 70, 0.568);
     }
     .thumbnail__date {
@@ -64,7 +71,7 @@
         padding: 5px;
         background: $background_top;
         font-size: 0.7rem;
-        color: $white;
+        color: $text_c;
         
     }
   }
