@@ -17,9 +17,9 @@
 <!-- TAGS, LINKS -->
 			<div class="col-lg-6 col-md-12 col-sm-12">
 				<div class="footer__social">
-					<a href="https://www.linkedin.com/in/patryk-nizio/"><i class='fab fa-linkedin'> </i></a>
-					<a href="https://github.com/Dyzio18"><i class='fab fa-github'> </i></a>
-					<a href="https://stackoverflow.com/users/9518713/patryk-nizio"><i class='fab fa-stack-overflow'> </i></a>
+					<a href="https://www.linkedin.com/in/patryk-nizio/" target="_blank"><i class='fab fa-linkedin'> </i></a>
+					<a href="https://github.com/Dyzio18" target="_blank"><i class='fab fa-github'> </i></a>
+					<a href="https://stackoverflow.com/users/9518713/patryk-nizio" target="_blank"><i class='fab fa-stack-overflow'> </i></a>
 				</div>
 
 				<h3 class="h3"> tagi </h3>
@@ -62,7 +62,7 @@
 		</div>
 	</div>	
 	<div class="footer__scrap">
-		 created by Dyzio with
+		 created by&nbsp;<span title=" to ja :) " class="underline">Dyzio</span>&nbsp;with
 		<div class="footer_heart">
 			 <i class="far fa-heart"></i>
 		</div>

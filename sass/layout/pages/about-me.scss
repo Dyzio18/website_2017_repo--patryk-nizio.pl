@@ -71,11 +71,12 @@
     .mesh__block {
         width: 100px;
         min-height: 100px;
-        img{
-            width: 100px;
-            height: 100px;
-        }
     }
+    .mesh__block:hover {
+        color:$secondary;
+        transition: 0.3s;
+    }
+
 }
 
 @media screen and (max-width: $sm)  {

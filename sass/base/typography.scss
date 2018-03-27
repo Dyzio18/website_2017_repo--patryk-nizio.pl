@@ -40,6 +40,8 @@ p{
     line-height: 1.8rem;
     margin-top: 15px;
     margin-bottom: 15px;
+    word-spacing: 0.1rem;
+
 }
 .title {
     color: $title_c;
@@ -72,6 +74,7 @@ p{
     word-wrap: break-word;
 
 }
+
 
 .text--small {
     font-size: 13px;
