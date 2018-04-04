@@ -1,12 +1,7 @@
 <?php get_header(); ?>
 <!--url('https://blog.spoongraphics.co.uk/wp-content/uploads/2015/flat-planet/vector-planet.jpg')-->
-    <header class="page__header" style="height:100vh; background: url('https://upload.wikimedia.org/wikipedia/commons/a/a0/Laptop-coffee-flat-design-by-david-mendoza.png') no-repeat center center fixed;   background-size: cover;
+    <header class="page__header" style="height:100vh; background: url('https://patryk-nizio.pl/files/img/patryk.png') no-repeat center center fixed;   background-size: cover;
 ">
-
-        <div style="position:absolute; bottom:15%; width: 100%;text-align: center; background:#333; padding 15px; border-radius-5px;">
-            <h3 class="h3" style="color:#fff; "> Strona jest obecnie w przebudowie...</h3>
-            <p style="font-size:0.8rem; margin-top: 0px; color:#fff;"> Jeśli znajdziesz błąd możesz go zgłosić przez formularz kontaktowy (na dole strony) </p>
-        </div>
     </header>
 
 

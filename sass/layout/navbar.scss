@@ -159,8 +159,9 @@
     }
 
     .navbar__logo {
-        z-index: -1;
+        z-index: 9991;
         width: 100%;
+        text-align: center;
         padding-top: 10px;
         font-size: 1.5rem;
         letter-spacing: 2px;
@@ -209,7 +210,7 @@
             }
 
             .navbar__side{
-                z-index: -1;
+               // z-index: -1;
                 position: fixed;
                 top: 0;
                 height: 100%;
