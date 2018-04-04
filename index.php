@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 <!--url('https://blog.spoongraphics.co.uk/wp-content/uploads/2015/flat-planet/vector-planet.jpg')-->
-    <header class="page__header" style="height:100vh; background: url('https://patryk-nizio.pl/files/img/patryk.png') no-repeat center center fixed;   background-size: cover;
-">
+    <header class="page__header--index" >
     </header>
 
 

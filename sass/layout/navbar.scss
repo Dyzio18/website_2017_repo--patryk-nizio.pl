@@ -7,24 +7,25 @@
     top: 0;
     height: 145px;
     width: 100%;
-    background: $navbar_bg; 
-    transition: 0.6s;
-    box-shadow: 0px 0px 20px $shadow_color;
+    transition: 0.5s;
 }
 
 .navbar--shrink {
-    height: 60px;
+  height: 60px;
+  background: $navbar_bg;
+  box-shadow: 0 0 20px $shadow_color;
+
     .navbar__logo {
         font-size: 1.4em;
         line-height: 1.4rem;
         letter-spacing: 2px;
-        transition: 0.6s
+        transition: 0.5s
     }
-    transition: 0.6s
+    transition: 0.5s
 }
 
 .navbar__desktop{
-    max-width: 1200px;
+    max-width: 1600px;
     height: 100%;
     display: flex;
     flex-wrap: nowrap;
@@ -191,7 +192,7 @@
             left: 0;
           //  display: block;
             transition: 0.6s;
-            box-shadow: 0px 20px 150px $shadow_color;
+            box-shadow: 0 20px 150px $shadow_color;
         }
         .navbar__mobile--hidden{
             position: fixed;

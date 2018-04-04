@@ -1,24 +1,25 @@
 
-$theme_secondary: #E53935;
-$theme_secondary__dark:#c62828;
-$theme_background_top: #000039;
-$theme_background_bottom: #1a024e;
-$theme_search_top:#34006a;
-$theme_search_bottom:#010058;
-$theme_text_c: #f5f5f5; // paragraph, content...
-$theme_title_c: #00e0a3; // title
-$theme_text_awarded_c: #0c00dd; // main header, awarded text
-$theme_black_lt: #333333;
+$secondary: #E53935;
+$secondary__dark:#c62828;
+$background_top: #000039;
+$background_bottom: #1a024e;
+$search_top:#34006a;
+$search_bottom:#010058;
+$text_c: #f5f5f5; // paragraph, content...
+$title_c: #00e0a3; // title
+$text_awarded_c: #0c00dd; // main header, awarded text
+$black_lt: #333333;
 
-$theme_background_content: #1a024e;
+$background_content: #1a024e;
 
-$theme_navbar_bg: $theme_background_top;
-$theme_navbar_bg_dark: $theme_background_top;
+$navbar_bg: $background_top;
+$navbar_bg_dark: $background_top;
 
-$theme_shadow_color: #000039;
+$shadow_color: #000039;
 
 
-$theme_link: $theme_secondary;
-$theme_link_hover: $theme_secondary__dark;
+$link: $secondary;
+$link_hover: $secondary__dark;
 
-$footer_theme: #050523;
+$footer: #050523;
+$white: #fff;

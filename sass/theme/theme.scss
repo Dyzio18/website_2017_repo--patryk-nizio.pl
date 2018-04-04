@@ -1,0 +1,246 @@
+/**
+  Light theme
+ */
+@import "./../theme/light";
+
+
+/**
+  - Typography
+    - links
+  - Components
+    - sidebar & widget
+    - thumbnails
+    - post
+    - contact form
+    - contrast button
+  - Layout
+    - pages (about me, index, portfolio, blog)
+    - navbar
+    - footer
+
+ */
+
+
+
+// Navbar in home side
+.light.home {
+  .navbar{
+    .navbar__logo {
+      a, a:hover{
+        color: #eee;
+      }
+    }
+    .navbar__menu {
+      ul {
+        li a {
+          color: #eee;
+        }
+      }
+    }
+  }
+  // after scroll
+  .navbar--shrink {
+    .navbar__logo {
+      a, a:hover{
+        color: $text_c;
+      }
+    }
+    .navbar__menu {
+      ul {
+        li a {
+          color: $text_c;
+        }
+      }
+    }
+  }
+
+}
+
+.light{
+
+  color: $text_c;
+  background: $background_top;
+  background: -webkit-linear-gradient($background_top,$background_bottom); /* Safari 5.1 to 6.0 */
+  background: -o-linear-gradient($background_top,$background_bottom); /* Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($background_top,$background_bottom); /* Firefox 3.6 to 15 */
+  background: linear-gradient($background_top,$background_bottom); /* Standard syntax (must be last) */
+
+  // -------------
+  // text, title & headers
+  .title--awarded {
+    color: $text_awarded_c;
+  }
+  .title {
+    color: $title_c;
+  }
+
+  // links
+  .link--clear, .link--clear:hover, .link--clear:visited {
+    color: $text_c;
+  }
+  a:link, a:visited{
+    color: $link;
+  }
+  a:hover, a:active   {
+    color: $link_hover;
+  }
+  .main{
+    a:hover {
+      background: $search_bottom;
+    }
+  }
+  .link:hover {
+    background: $search_bottom;
+  }
+
+  // -------------
+  // sidebar & widget
+  .widget {
+    color: $text_c;
+    a{
+      color: $text_c;
+    }
+  }
+  .widget-title {
+    color: $title_c;
+  }
+
+  // Thumbnails
+  .thumbnail__category {
+    color: $white;
+    background-color: $secondary;
+  }
+  .thumbnail__category:hover {
+    background-color: $secondary__dark;
+  }
+  .thumbnail__date {
+    background: $background_top;
+    color: $text_c;
+  }
+
+  // Contact form
+  .form__input {
+    input, textarea {
+      color: $white;
+    }
+  }
+  .form__textarea{
+    color: $white;
+  }
+  .form__submit{
+    background: $secondary;
+    color: $white;
+  }
+
+  .contrast {
+    background-color: $navbar_bg;
+    border: 2px solid $text_c;
+  }
+
+  // -------------
+  // Layout/pages
+
+  // about me
+  .technology__mesh {
+    .mesh__block:hover {
+      color:$secondary;
+    }
+  }
+  .profil__bar{
+    border-top: 3px solid $text_c;
+    .profil__links{
+      ul {
+        li a {
+          color: $text_c;
+        }
+      }
+    }
+  }
+
+  // footer
+  .footer {
+    background: $footer;
+    color: #fff;
+  }
+  .footer__tags, .footer__category {
+    a{
+      color: #fff;
+      background: $secondary;
+    }
+    a:hover{
+      background: $secondary__dark;
+    }
+  }
+  .footer__social {
+    a {
+      color: #fff;
+    }
+  }
+  // navbar
+  .navbar{
+    background: transparent;
+  }
+
+  .navbar--shrink {
+    background: $navbar_bg;
+    box-shadow: 0 0 20px $shadow_color;
+  }
+  .navbar__link:hover{
+    background: $secondary;
+    color: $white;
+  }
+  .search__bar{
+    background: $search_top;
+    background: -webkit-linear-gradient($search_top,$search_bottom); /* Safari 5.1 to 6.0 */
+    background: -moz-linear-gradient($search_top,$search_bottom); /* Firefox 3.6 to 15 */
+    background: -o-linear-gradient($search_top,$search_bottom); /* Opera 11.1 to 12.0 */
+    background: linear-gradient($search_top,$search_bottom); /* Standard syntax (must be last) */
+    .search__input {
+      border-bottom: 1px solid #fff;
+      color: $text_c;
+    }
+  }
+  .navbar__logo {
+    a, a:hover{
+      color: $text_c;
+    }
+  }
+  .navbar__menu {
+    ul {
+      li a {
+        color: $text_c;
+      }
+    }
+  }
+  // MOBILE
+  @media screen and (max-width: $sm)  {
+    .navbar__logo {
+      a, a:hover{
+        color: $text_c;
+      }
+    }
+    .navbar {
+      .navbar__mobile--show{
+        box-shadow: 0 20px 150px $shadow_color;
+      }
+      .navbar__mobile{
+        .navbar__side{
+          background: $navbar_bg_dark;
+        }
+
+        .list__menu{
+          li{
+            a{
+              color: $title_c;
+            }
+            a:hover{
+              color: $text_c;
+            }
+          }
+        }
+      }
+    }
+  }
+    // <-- navbar end
+}
+

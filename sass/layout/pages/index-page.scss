@@ -11,3 +11,14 @@
         padding-bottom: 50px;
     }
 }
+
+
+.page__header--index {
+    height:100vh;
+    background: url('https://patryk-nizio.pl/files/img/patryk.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-clip:border-box;
+}

@@ -1,25 +1,26 @@
 
-$theme_secondary: #E53935;
-$theme_secondary__dark:#c62828;
-$theme_background_top: #f7f9fb;
-$theme_background_bottom: #f4f4f4;
-$theme_search_top:#eee;
-$theme_search_bottom:#eee;
-$theme_text_c: #333; // paragraph, content...
-$theme_title_c: #333; // title
-$theme_text_awarded_c: #0c00dd; // main header, awarded text
-$theme_black_lt: #333333;
+$secondary: #E53935;
+$secondary__dark:#c62828;
+$background_top: #f7f9fb;
+$background_bottom: #f4f4f4;
+$search_top:#eee;
+$search_bottom:#eee;
+$text_c: #333; // paragraph, content...
+$title_c: #333; // title
+$text_awarded_c: #0c00dd; // main header, awarded text
+$black_lt: #333333;
 
-$theme_background_content: #fff;
-
-
-$theme_navbar_bg: #fff;
-$theme_navbar_bg_dark: $theme_background_top;
-
-$theme_shadow_color:#d6dee4;
+$background_content: #fff;
 
 
-$theme_link: #8870FF;
-$theme_link_hover: #1D2247;
+$navbar_bg: #fff;
+$navbar_bg_dark: $background_top;
 
-$footer_theme: #37474F;
+$shadow_color:#d6dee4;
+
+
+$link: #8870FF;
+$link_hover: #1D2247;
+
+$footer: #37474F;
+$white: #fff;

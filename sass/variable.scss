@@ -1,8 +1,4 @@
-
 @import "theme/dark";
-@import "theme/light";
-
-
 
 $xs:576px;
 $sm:768px;
@@ -11,28 +7,3 @@ $lg:1200px;
 
 $radius: 5px;
 $white: #fff;
-
-$shadow_color: $theme_shadow_color;
-
-$secondary: $theme_secondary;
-$secondary__dark: $theme_secondary__dark;
-
-$background_top: $theme_background_top;
-$background_bottom: $theme_background_bottom;
-$background_content: $theme_background_content;
-$search_top: $theme_search_top;
-$search_bottom: $theme_search_bottom;
-
-
-$text_c: $theme_text_c; 
-$title_c: $theme_title_c; 
-$text_awarded_c: $theme_text_awarded_c;
-$black_lt: $theme_black_lt;
-
-$link: $theme_link;
-$link_hover: $theme_link_hover;
-
-$navbar_bg: $theme_navbar_bg;
-$navbar_bg_dark: $theme_navbar_bg_dark;
-
-$footer: $footer_theme;

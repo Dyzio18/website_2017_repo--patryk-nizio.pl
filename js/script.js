@@ -5,10 +5,10 @@
     const navbar = document.getElementsByClassName('navbar')[0];
     document.addEventListener('scroll', toggleNavbar, false);
     function toggleNavbar() {     
-        if(window.pageYOffset >= 300) {
+        if(window.pageYOffset >= 150) {
             navbar.classList.add('navbar--shrink');
         }
-        if(window.pageYOffset < 300) {
+        if(window.pageYOffset < 150) {
             navbar.classList.remove('navbar--shrink');
         }
     }
@@ -37,45 +37,34 @@
         mobileNavIsVisible--
     });
 
-
     
     /**
     * Contrast
     */
 
     const setTheme = function() {
-        if (localStorage.theme === "undefined") {
-            document.getElementById('dyzio_theme-style_dark-css').disabled  = true;
-            document.getElementById('dyzio_theme-style_light-css').disabled = false;
-            localStorage.setItem("theme", "light");
-        } else if (localStorage.theme == "dark") {
-            document.getElementById('dyzio_theme-style_dark-css').disabled  = false;
-            document.getElementById('dyzio_theme-style_light-css').disabled = true;
-        } else {
-            document.getElementById('dyzio_theme-style_dark-css').disabled  = true;
-            document.getElementById('dyzio_theme-style_light-css').disabled = false;
-        }
+        if (localStorage.theme === "light") document.querySelector('body').classList.add('light');
+        else  document.querySelector('body').classList.remove('light');
+
+    };
+
+    if (localStorage.theme === "undefined") {
+        localStorage.setItem("theme", "dark");
     }
 
     setTheme();
-    let colorBtn = document.getElementById("theme-toggle");
-
-    colorBtn.addEventListener('click', function() { 
-        if (localStorage.theme === "undefined"){
-            document.getElementById('dyzio_theme-style_dark-css').disabled  = false;
-            document.getElementById('dyzio_theme-style_light-css').disabled = true;
-            localStorage.setItem("theme", "dark");
-        } else if (localStorage.theme == "light") {
-            document.getElementById('dyzio_theme-style_dark-css').disabled  = false;
-            document.getElementById('dyzio_theme-style_light-css').disabled = true;  
-            localStorage.setItem("theme", "dark");
-        } else {
-            document.getElementById('dyzio_theme-style_dark-css').disabled  = true;
-            document.getElementById('dyzio_theme-style_light-css').disabled = false;
+    const colorBtn = document.getElementById("theme-toggle");
+    colorBtn.addEventListener('click', function() {
+        if (localStorage.theme === "dark") {
+            document.querySelector('body').classList.add('light');
             localStorage.setItem("theme", "light");
+        } else {
+            document.querySelector('body').classList.remove('light');
+            localStorage.setItem("theme", "dark");
         }
-     }, false);
-
+    // document.querySelector('body').classList.toggle('light');
+     //  console.log('change theme');
+    }, false)
 
 
 })();

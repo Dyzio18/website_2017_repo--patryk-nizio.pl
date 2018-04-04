@@ -1,7 +1,29 @@
 /* 
-Dyzio
-2018
+Dyzio 2018
+
+  - Vendor
+    - reboot
+    - grid
+  - Typography
+    - links
+  - Components
+    - sidebar & widget
+    - thumbnails
+    - post
+    - contact form
+    - contrast button
+  - Layout
+    - pages (about me, index, portfolio, blog)
+    - navbar
+    - footer
+  - Helpers
+  - Theme (light)
+    - theme/light
+  - Variable
+    - width
+    - theme/dark (colors)
 */
+
 // GRID & RESET
 @import "vendor/bootstrap-reboot";
 @import "vendor/bootstrap-grid";
@@ -24,3 +46,6 @@ Dyzio
 
 // HELPERS
 @import "helpers/padding-margin";
+
+// THEME (Light)
+@import "theme/theme";
